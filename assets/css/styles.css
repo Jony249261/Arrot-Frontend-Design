@@ -15,7 +15,7 @@
   --container-color: #FFFFFF;
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
   --biggest-font-size: 2.25rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -75,7 +75,7 @@ h1,h2,h3,p,ul{
   margin: 0;
 }
 
-ul{
+ul,li{
   padding: 0;
   list-style: none;
 }
@@ -411,14 +411,86 @@ img{
   }
 }
 
+/*section-heading*/
+.section-heading{
+    font-family:"Raleway-bold";
+    text-align:center;
+    Position:relative;
+    margin-bottom:6rem;
+}
+.section-heading:after{
+    content:'';
+    display:block;
+    width: 100%;
+    height:30px;
+    background-image:url(../img/hr.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    position:absolute;
+    bottom:-40px;
+}
+/*single-post*/
+#single-blog-post{
+  color: #000;
+}
+
+.main-row{
+  margin:2% 8%;
+  background-color: #F40000;
+  box-shadow: 0 0 10px 10px rgba(0,0,0,.05);
+  border-radius: 0.5rem;
+  
+}
+.blog-imge > img{
+  width: 100%;
+  height: 100%;
+  transform: translateY(-30px);
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 8px 3px rgba(0,0,0,0.3);
+
+}
+
+blog-date span{
+  color: #962c51;
+}
+.ul-cls{
+  justify-content: center;
+}
+.ul-cls li{
+  cursor: pointer;
+}
+.blog-title h2{
+  font-style: normal;
+  font-weight: 400;
+}
+.blog-desc p{
+  font-style: normal;
+  line-height: 2;
+}
+.list-group-item {
+    
+    background-color: #F40000;
+    border: 0;
+}
 
 
+.blog-img img{
+  border-radius: 12%;
+}
+#single-post{
+  font-family:sans-serif;
+}
+.single-post{
+  font-weight: 700;
 
+}
 /*Slider End*/
 
 .navbar-brand img{
-  width: 50%;
+  width: 60%;
 }
+
 
 /*========== ABOUT ==========*/
 .about__data{
@@ -478,9 +550,13 @@ img{
   float: left;
 }
 
+.services-m{
+  margin-top: -40px !important;
+}
 /*========== CONTACT ==========*/
-.jonyy{
+.about-m{
   margin-bottom: -110px;
+  margin-top: -40px;
 }
 
 .contact__container{
@@ -494,7 +570,7 @@ img{
 /*========== FOOTER ==========*/
 
 .footer__logo img{
-  width: 50%;
+  width: 40%;
 }
 .footer__container{
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -506,14 +582,14 @@ img{
 }
 
 .footer__logo{
-  font-size: var(--h3-font-size);
+ 
   color: #F40000 !important;
   font-weight: var(--font-semi-bold);
 }
 
 .footer__description{
   display: block;
-  font-size: 20px;
+  font-size: 18px;
   margin: .25rem 0 var(--mb-3);
   color: #F40000;
 }
@@ -607,6 +683,111 @@ img{
     box-shadow: -4px 10px 25px 3px rgba(199, 169, 199, 0.63);
 }
 
+/*==================Team=============*/
+ #team a {
+    color: red;
+}
+#team a:hover{
+  color: rgb(219, 21, 120);
+}
+#team .name{
+  color: #F40000;
+}
+ .p-4 {
+    /* padding: 1.5rem!important; */
+    padding-right: 1px !important;
+    padding-top: 10px !important;
+
+}
+.info-team{
+  padding: 0 100px !important;
+}
+#team .card-body:hover{
+-webkit-box-shadow: 4px 10px 25px 3px rgba(199, 169, 199, 0.63);
+    -moz-box-shadow: 4px 10px 25px 3px rgba(199, 169, 199, 0.63);
+    box-shadow: 4px 10px 25px 3px rgba(199, 169, 199, 0.63);
+
+}
+
+#team .card-body{
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+}
+
+#team .fa {
+  font-size: 25px;
+  color: #F40000 !important;
+}
+
+#team .card-body2:hover {-webkit-box-shadow: -4px 10px 25px 3px rgba(199, 169, 199, 0.63);
+    -moz-box-shadow: -4px 10px 25px 3px rgba(199, 169, 199, 0.63);
+    box-shadow: -4px 10px 25px 3px rgba(199, 169, 199, 0.63); }
+  #team .card:hover .fa {
+    color: red; }
+  .team-name{
+    color: #F40000 !important;
+    font-weight: bold;
+  }
+  .team{
+    font-family: sans-serif;
+  }
+  
+  /*============Blog==============*/
+  #blog img{
+    width: 100%;
+    height: 60%;
+  }
+  #blog h1,p{
+    font-family: sans-serif;
+  }
+  #blog h1{
+    font-weight: bold;
+  }
+  #blog .col-md-8{
+    max-height: 700px !important;
+    margin-bottom: -250px !important;
+  }
+  .blog-text{
+    font-family: sans-serif;
+  }
+
+
+  /* Social*/
+ 
+
+    .social{
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.social a{
+    margin-bottom: 10px;
+}
+
+
+
+.social i{
+  font-size: 40px;
+  z-index: 1;
+}
+
+.social a:nth-child(1) i{
+  color: red;
+}
+
+.social a:nth-child(2) i{
+  color: red
+}
+
+  /* Social*/
+
+
 /*=================Buyers============*/
       .buyers{
           font-family: sans-serif;
@@ -650,14 +831,14 @@ img{
         padding:0 100px;
       }
 
-      .jonyyyy{
+      .contact-mm{
         margin-top: 10px !important;
   background: url("../img/tree-3063715_1280.jpg") ;
   background-size: cover;
   height: 45vh;
   background-attachment: fixed;
       }
-      .jonyyy{
+      .buyer-m{
         margin-bottom: -50px;
       }
       .contact-contact{
